@@ -7,8 +7,8 @@ import re
 import logging
 
 # Update the common configurations
-CRAWLER_DATA_DIR = os.path.join(os.path.expanduser('~'), 'crawler-data')
-LOGS_DIR = os.path.join(os.path.expanduser('~'), 'logs')
+CRAWLER_DATA_DIR = os.path.join(os.path.dirname(__file__), 'crawler-data')
+LOGS_DIR = os.path.join(os.path.dirname(__file__), 'logs')
 
 def create_session_with_retries():
     session = requests.Session()
